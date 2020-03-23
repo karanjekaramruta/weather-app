@@ -14,7 +14,7 @@ app.post("/", function(req,res){
   //const cityName = "London";
   const cityName = req.body.cityName;
   console.log(req.body.cityName);
-  const appId = "64dce1a774faafc9e86206f93bfe9a90";
+  const appId = ""; //not passing sensitive info on github
   const units = "metric";
   const apiUrl = "https://api.openweathermap.org/data/2.5/weather?q="+ cityName + "&appid="+appId+"&units="+units+"";
   console.log(apiUrl);
